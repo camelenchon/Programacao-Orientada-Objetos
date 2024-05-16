@@ -4,9 +4,10 @@ public class App {
     public static void main(String[] args) throws Exception {
         Viagem viagem = new Viagem();
         viagem.destino = "Salvador";
-        viagem.duracaoDeDias = 7;
+        viagem.duracaoDeDias = 10;
         viagem.temBagagem = true;
 
+        viagem.duracaoViagem();
         viagem.malas();
 
         Aviao aviao = new Aviao();
@@ -15,7 +16,8 @@ public class App {
         aviao.duracaoDoVoo = 2;
         aviao.passageiros = new ArrayList<Viajante>();
 
-        aviao.refeicaoNoVoo();
+        aviao.comerNoVoo();
+        aviao.dormirNoVoo();
 
         Viajante viajante1 = new Viajante();
         viajante1.nome = "Jose";
@@ -41,16 +43,18 @@ public class App {
         viajante4.primeiraViagem = true;
         aviao.passageiros.add(viajante4);
 
-        viajante1.medoAviao();
-        viajante2.medoAviao();
-        viajante3.medoAviao();
-        viajante4.medoAviao();
+        viajante1.escreverMensagem();
+        viajante2.escreverMensagem();
+        viajante3.escreverMensagem();
+        viajante4.escreverMensagem();
 
         viajante1.maiorDeIdade();
         viajante2.maiorDeIdade();
         viajante3.maiorDeIdade();
         viajante4.maiorDeIdade();
 
+        System.out.println();
+        viagem.imprimirDetalhesViagem1();
         System.out.println();
         aviao.imprimirDetalhesdaViagem();
 

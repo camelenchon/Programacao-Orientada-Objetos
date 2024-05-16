@@ -3,7 +3,7 @@ public class Viajante {
     int idade;
     boolean primeiraViagem;
 
-    public void medoAviao() {
+    public void escreverMensagem() {
         if (primeiraViagem) {
             System.out.println("Bem vindo a bordo");
         } else {

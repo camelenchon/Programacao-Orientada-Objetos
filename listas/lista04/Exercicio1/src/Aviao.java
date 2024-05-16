@@ -6,13 +6,21 @@ public class Aviao {
     int duracaoDoVoo;
     ArrayList<Viajante> passageiros;
 
-    public void refeicaoNoVoo() {
+    public void comerNoVoo() {
         if (horarioDoVoo >= 4 && horarioDoVoo <= 10) {
-            System.out.println("O Cafe da manha sera servido");
+            System.out.println("O cafe da manha sera servido a bordo");
         } else if (horarioDoVoo >= 10 && horarioDoVoo <= 16) {
-            System.out.println("O almoço sera servido");
+            System.out.println("O almoco sera servido a bordo");
         } else {
-            System.out.println("Sera servido um lanche");
+            System.out.println("Sera servido um lanche a bordo");
+        }
+    }
+
+    public void dormirNoVoo() {
+        if (duracaoDoVoo > 6) {
+            System.out.println("Voce vai conseguir dormir no voo");
+        } else {
+            System.out.println("Vai ficar dificil, mas pode tentar dormir");
         }
     }
 
