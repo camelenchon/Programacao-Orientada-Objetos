@@ -22,7 +22,7 @@ public class BibliotecaMusical {
     }
 
     public void listarMusicas() {
-        System.out.println("A lista de musicas disponiveis: \n");
+        System.out.println("A lista de musicas disponiveis na biblioteca musical: \n");
         for (Entry<String, Musica> musica : acervo.entrySet()) {
             System.out.println(musica.getValue().getTitulo());
         }
